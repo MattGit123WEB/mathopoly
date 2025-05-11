@@ -6,10 +6,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to Mathopoly</h1>
-  <p>A fun math-based project for school!</p>
-  <button onclick="showMessage()">Click for a Math Fact</button>
-  <p id="fact"></p>
+  <h1>Mathopoly</h1>
+  <p>Enter a board space number (1–40):</p>
+  <input type="number" id="spaceInput" min="1" max="40">
+  <button onclick="showLocation()">Go</button>
+
+  <div id="result" style="margin-top:20px;"></div>
+  <div id="question" style="margin-top:10px;"></div>
+  <button id="revealBtn" onclick="revealAnswer()" style="display:none;">Reveal Answer</button>
+  <div id="answer" style="margin-top:10px; font-weight: bold;"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
